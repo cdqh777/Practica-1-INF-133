@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Digimon</title>
+    <link rel="stylesheet" href="stylesj4.css">
+</head>
+<body>
+    <!-- Nombre: Quispe Huanca Carlos Daniel | C.I.: 12345678 -->
+    <div class="container">
+        <h1>Buscador de Digimon</h1>
+        <p class="autor">Estudiante: Quispe Huanca Carlos Daniel - C.I.: 12345678</p>
+        
+        <div class="busqueda">
+            <select id="tipoBusqueda">
+                <option value="todos">Todos</option>
+                <option value="nombre">Por nombre</option>
+                <option value="nivel">Por nivel</option>
+            </select>
+            
+            <input type="text" id="valorBusqueda" placeholder="Ingrese valor...">
+            <button onclick="buscarDigimon()">Buscar</button>
+        </div>
+        
+        <div id="resultados">
+            <p>Seleccione tipo de búsqueda y presione Buscar</p>
+        </div>
+    </div>
+    
+    <script src="scriptj4.js"></script>
+</body>
+</html>

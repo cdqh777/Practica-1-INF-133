@@ -1,0 +1,149 @@
+/* Nombre: Quispe Huanca Carlos Daniel | C.I.: 12345678 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.autor {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.filtros input {
+    flex: 1;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filtros button {
+    padding: 10px 20px;
+    background: #4a6ee0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filtros button:hover {
+    background: #3a5ecb;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+    min-height: 300px;
+}
+
+.pokemon-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.pokemon-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.pokemon-card .nombre {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.pokemon-card .id {
+    color: #999;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.paginacion button {
+    padding: 8px 16px;
+    background: #4a6ee0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.paginacion button:hover:not(:disabled) {
+    background: #3a5ecb;
+}
+
+.paginacion button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.paginacion span {
+    font-weight: bold;
+    color: #333;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+.error {
+    color: #d32f2f;
+}
